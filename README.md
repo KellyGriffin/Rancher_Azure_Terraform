@@ -11,7 +11,7 @@ Terraform scripts will deploy:
 * Rancher server (using Stable version of Rancher)
 
 <p align="center">
-  <img src="https://github.com/KellyGriffin/Rancher_Azure_Terraform/blob/master/docs/assets/RancherAzure.png" width="350" title="Rancher Azure Architecture">
+  <img src="https://github.com/KellyGriffin/Rancher_Azure_Terraform/blob/master/images/RancherAzure.png" width="350" title="Rancher Azure Architecture">
 </p>
 
 This deployment will expose your Rancher server to the internet.  Modify the Terraform environment if you don't want this to occur.  It also provides a Dynamic Public IP Address - caution should be expressed when using a dynamic address for your Rancher server.  It is recommended a static address be used and/or a DNS entry for the Rancher URL.
@@ -41,6 +41,11 @@ subscription_id = "XXXX"
 ```
 
 *Please note - do not copy your secret.tfvars file anywhere outside of your Organisation as it contains very sensitive information about your Azure environment.*
+
+> Modify Global Variables
+
+1. Open the global.auo.tfvars file
+2. Modify necessary settings for your Azure environment
 
 > Execute terraform
 

@@ -9,13 +9,13 @@ user = {
   username = "your_name"
 }
 
-// Network - modify accordingly
+// Network - modify accordingly - examples below
 
 vnet_address_space = "10.3.0.0/16"
 subnet_front_address_prefix = "10.3.1.0/24"
 subnet_address_prefix = "10.3.2.0/24"
 
-// Virtual machine
+// Virtual machine - examples below
 
 // Need to ensure the below is correct for the zone mentioned above - some VM's are not available in every location
 
