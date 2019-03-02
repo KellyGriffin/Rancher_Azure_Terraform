@@ -66,7 +66,7 @@ Rancher Server IP address = [
 
 To ensure you can get access to your Rancher server - use the IP Address shown above with HTTPS.
 
-*Note: Check troubleshooting to understand why there is an unsecure warning.*
+*Note - You will get a SSL warning due to the certificates being utilised - that is normal.*
 
 ## What to do next
 
@@ -74,5 +74,8 @@ To ensure you can get access to your Rancher server - use the IP Address shown a
 > Configure Rancher
 
 Follow the details found on our Website to configure Rancher as found [here](https://rancher.com/docs/rancher/v2.x/en/admin-settings/)
+
+One really important note is the URL you are using for Rancher.  It's highly recommended this be a DNS based URL
+Another thing worth noting - you have allocated a Dynamic IP address for your Rancher server - unless you have a DNS based URL or fronting your Rancher server with a LoadBalancer (NGINX as an example) then it's recommended that you assign a static Public IP Address.
 
 Once complete - sit back and enjoy!!
